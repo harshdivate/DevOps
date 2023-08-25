@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a Wish</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron bg-primary">
+            <h1 class="text-center text-light"><strong>MAKE A WISH</strong></h1>
+            
+        </div>
+
+        <div class="form-div" style="padding:50px 50px;">
+            <form action="/submit-wish" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" placeholder="Enter Name" id="name">
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" placeholder="Enter email" id="email">
+                </div>
+    
+                <div class="form-group">
+                    <label for="wish">Wish</label>
+                    <input type="text" class="form-control" placeholder="Enter wish" id="wish">
+                </div>
+    
+                <button class="btn btn-primary">Make A WISH</button>
+            </form>
+        </div>
+    </div>
+   
+</body>
+</html>
