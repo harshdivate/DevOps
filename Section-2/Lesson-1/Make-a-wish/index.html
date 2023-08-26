@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make a Wish</title>
+   
 </head>
 <body>
     <div class="container-fluid">
@@ -14,28 +15,30 @@
             <h1 class="text-center text-light"><strong>MAKE A WISH</strong></h1>
             
         </div>
-
-        <div class="form-div" style="padding:50px 50px;">
-            <form action="/submit-wish" method="POST">
+        <div class="row" style="display: flex;justify-content: center;">
+        <div class="form-div" style="padding:50px 50px;width:700px">
+            <form id="myForm" action="/submitWish" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" placeholder="Enter Name" id="name">
+                    <input type="text" class="form-control" placeholder="Enter Name" name="name" id="name">
                 </div>
     
                 <div class="form-group">
                     <label for="email">Email address:</label>
-                    <input type="email" class="form-control" placeholder="Enter email" id="email">
+                    <input type="email" class="form-control" placeholder="Enter email" name="email" id="email">
                 </div>
     
                 <div class="form-group">
                     <label for="wish">Wish</label>
-                    <input type="text" class="form-control" placeholder="Enter wish" id="wish">
+                    <input type="text" class="form-control" placeholder="Enter wish" name="wish" id="wish">
                 </div>
     
-                <button class="btn btn-primary">Make A WISH</button>
+                <button class="btn btn-primary" type="submit" >Make A WISH</button>
             </form>
         </div>
     </div>
-   
+</div>
+
 </body>
+
 </html>
